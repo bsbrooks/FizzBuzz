@@ -1,0 +1,40 @@
+#mnCntnr{
+  background-color: lightgreen;
+  height: 700px;
+  /*width: 100%;*/
+  border: 10px;
+  border-color: blue;
+}
+#addItem{
+  background-color: orange;
+  height: 20px;
+ 
+  border: 10px;
+}
+#mnList{
+  background-color: lightblue;
+  height: 600px;
+  padding-left: 20px;
+  /*width: 300px;*/
+  
+}
+#storeFlrPln{
+  background-color: red;
+  height: 600px;
+}
+
+#image{
+  margin-top: 50px;
+  
+}
+#mnTitle{
+  background-color: blue;
+  height: 80px;
+  text-align: center;
+  color: white;
+}
+
+#newItem{
+  background-color: tan;
+  height: 50px;
+}

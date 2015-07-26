@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>FizzBuzz Refactor</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet"> -->
+    
+</head>
+
+<style type="text/css">
+  #quanEnter{
+    background-color: lightblue
+  }
+  #mainCode{
+    background-color: blue;
+    height: 4000px;
+    color: white;
+    font-size:150%;
+  }
+</style>
+
+  <body>
+<div id="quanEnter">
+ <h1>FizzBuzz ... Please Enter An Integer Between 50 and 100:</h1>
+           
+            <div id="mainCode">
+
+<script  type="text/javascript">
+ $(document).ready(function() {
+
+var repeat="yes;"
+do {
+var intNumber = prompt ("FizzBuzz: Please Enter An Integer Between 50 and 100");
+ var upperLimit=parseInt(intNumber)
+      if (intNumber <50 || intNumber > 100) {
+      alert("The number you entered is out of the specified range!!!! Click OK to try again.");
+   
+    }
+      else if (intNumber % 1 !== 0) {
+      alert("The number you entered is not an integer!!!! Click OK to try again. ");
+    
+    }
+      else{
+        var repeat = "no";
+    }}
+
+while (repeat !== "no");
+
+for (i = 1 ; i < upperLimit + 1; i++) {
+
+    var modResult1 = i % 3;
+    var modResult2 = i % 5;
+   
+if (modResult1 == 0 && modResult2 !== 0)  {
+     fb = "Fizz";
+    }
+  else if (modResult1 !== 0 && modResult2 == 0) {
+      fb = "Buzz";
+    }
+  else if (modResult2 == 0 && modResult1 == 0) {
+      fb = "FizzBuzz";
+    }
+  else {
+      fb = i
+    }
+  
+ $("#mainCode").append ("<p>" +fb + "</br>"+"</p>");
+
+}})
+
+   </script>
+  </div>
+</body>

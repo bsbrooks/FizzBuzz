@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>FizzBuzz Refactor</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet"> -->
+    
+</head>
+
+<style type="text/css">
+  
+</style>
+
+  <body>
+<div>
+
+
+<script  type="text/javascript">
+ $(document).ready(function() {
+
+ /*	input(Enter an Integer Between 50 and 100)*/
+
+  for (i = 1 ; i < 101; i++) {
+
+  	var modResult1 = i % 3;
+  	var modResult2 = i % 5;
+  	var fb = "kkk"
+
+
+  	if (modResult1 == 0 && modResult2 !== 0)  {
+  	 fb = "Fizz";
+  	}
+	else if (modResult1 !== 0 && modResult2 == 0) {
+  		fb = "Buzz";
+  	}
+ 	else if (modResult2 == 0 && modResult1 == 0) {
+  		fb = "FizzBuzz";
+  	}
+  else {
+   		fb = i
+   	}
+  
+
+   /*$('#display').append("<p>" fb "</p>");*/
+   document.write(fb + "</br>")
+
+console.log (fb);
+console.log(modResult1);
+console.log(modResult2);
+}})
+  </script>
+
+  </body>

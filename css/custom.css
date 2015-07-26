@@ -1,0 +1,58 @@
+/*This is is a custom stylesheet*/
+#left_banner{
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+}
+#right_banner{
+	margin-right: 0;
+	margin-left: 0;
+	padding-right: 0;
+}
+
+.panel-heading:hover {
+	cursor: pointer;
+}
+.panel-heading{
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+.navbar-default{
+	border: none;
+}
+.panel-default{
+	border: none;
+}
+.panel-body{
+	border: none;
+}
+
+@media (max-width: 767px){
+   .navbar-default{
+	
+	position:fixed;
+	top:0;
+	width:100%;
+
+}
+#mnHeader{
+	margin-top: 40px;
+}
+#mnContent{
+	z-index: -1;
+}
+.navbar-default{
+	
+	position:fixed;
+	top:0;
+	width:100%;
+
+}
+#mnHeader{
+	margin-top: 40px;
+}
+#mnContent{
+	z-index: -1;
+}
+}
